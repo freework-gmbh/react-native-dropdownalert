@@ -120,6 +120,7 @@ export default class DropdownAlert extends Component {
     elevation: 1,
     zIndex: null,
     sensitivity: 20,
+    icon: null,
   };
   constructor(props) {
     super(props);
@@ -428,7 +429,7 @@ export default class DropdownAlert extends Component {
             onLayout={event => this.onLayoutEvent(event)}
           >
             <View style={style}>
-              <ImageView style={StyleSheet.flatten(this.props.imageStyle)} source={source} />
+              {this.props.icon}
               <View style={StyleSheet.flatten(this.props.defaultTextContainer)}>
                 <Label style={StyleSheet.flatten(this.props.titleStyle)} numberOfLines={this.props.titleNumOfLines} text={this.state.title} />
                 <Label style={StyleSheet.flatten(this.props.messageStyle)} numberOfLines={this.props.messageNumOfLines} text={this.state.message} />
