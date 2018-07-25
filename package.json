@@ -1,13 +1,20 @@
 {
   "name": "@freework/dropdownalert",
-  "version": "3.2.3",
+  "version": "3.5.2",
   "description": "A simple alert to notify users about new chat messages, something went wrong or everything is ok.",
   "main": "DropdownAlert.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "jest && codecov"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "/Example"
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "setupTestFrameworkScriptFile": "./setupTests.js"
   },
   "repository": {
     "type": "git",
@@ -31,16 +38,17 @@
   },
   "homepage": "https://github.com/freework-gmbh/react-native-dropdownalert#readme",
   "devDependencies": {
-    "babel-jest": "19.0.0",
-    "babel-preset-react-native": "1.9.1",
-    "enzyme": "2.8.2",
-    "enzyme-to-json": "1.5.1",
-    "jest": "19.0.2",
+    "babel-jest": "22.4.1",
+    "babel-preset-react-native": "4.0.0",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "3.3.1",
+    "jest": "21.1.0",
     "prop-types": "15.5.10",
-    "react": "16.0.0-alpha.6",
-    "react-dom": "15.5.4",
-    "react-native": "0.44.0",
-    "react-test-renderer": "15.5.4"
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-native": "0.54.4",
+    "react-test-renderer": "16.0.0"
   },
   "dependencies": {
     "prop-types": "15.5.10"

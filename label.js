@@ -5,7 +5,7 @@ import { Text } from 'react-native';
 export default class Label extends Component {
   static propTypes = {
     text: PropTypes.string,
-    style: Text.propTypes.style,
+    style: PropTypes.object,
     numberOfLines: PropTypes.number,
     textProps: PropTypes.object,
   };

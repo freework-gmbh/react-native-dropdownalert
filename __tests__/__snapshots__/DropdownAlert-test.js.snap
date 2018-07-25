@@ -33,7 +33,6 @@ exports[`renders alert with zIndex correctly 1`] = `
   <TouchableOpacity
     activeOpacity={0.95}
     disabled={false}
-    focusedOpacity={0.7}
     onLayout={[Function]}
     onPress={[Function]}
   >
@@ -51,55 +50,68 @@ exports[`renders alert with zIndex correctly 1`] = `
         ]
       }
     >
-      <ImageView
-        imageProps={Object {}}
-        source={1}
-        style={
-          Object {
-            "alignSelf": "center",
-            "height": 36,
-            "padding": 8,
-            "width": 36,
-          }
-        }
-      />
-      <View
+      <SafeAreaView
         style={
           Object {
             "flex": 1,
-            "padding": 8,
+            "flexDirection": "row",
           }
         }
       >
-        <Label
-          numberOfLines={1}
-          style={
+        <ImageView
+          imageProps={Object {}}
+          source={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 16,
-              "fontWeight": "bold",
-              "textAlign": "left",
+              "testUri": "../../../assets/info.png",
             }
           }
-          text="Hello"
-          textProps={Object {}}
-        />
-        <Label
-          numberOfLines={3}
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 14,
-              "fontWeight": "normal",
-              "textAlign": "left",
+              "alignSelf": "center",
+              "height": 36,
+              "padding": 8,
+              "width": 36,
             }
           }
-          text="World!"
-          textProps={Object {}}
         />
-      </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "padding": 8,
+            }
+          }
+        >
+          <Label
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "textAlign": "left",
+              }
+            }
+            text="Hello"
+            textProps={Object {}}
+          />
+          <Label
+            numberOfLines={3}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 14,
+                "fontWeight": "normal",
+                "textAlign": "left",
+              }
+            }
+            text="World!"
+            textProps={Object {}}
+          />
+        </View>
+      </SafeAreaView>
     </View>
   </TouchableOpacity>
 </AnimatedComponent>
@@ -137,7 +149,6 @@ exports[`renders custom alert correctly 1`] = `
   <TouchableOpacity
     activeOpacity={0.95}
     disabled={false}
-    focusedOpacity={0.7}
     onLayout={[Function]}
     onPress={[Function]}
   >
@@ -156,55 +167,64 @@ exports[`renders custom alert correctly 1`] = `
         ]
       }
     >
-      <ImageView
-        imageProps={Object {}}
-        source="https://facebook.github.io/react/img/logo_og.png"
-        style={
-          Object {
-            "alignSelf": "center",
-            "height": 36,
-            "padding": 8,
-            "width": 36,
-          }
-        }
-      />
-      <View
+      <SafeAreaView
         style={
           Object {
             "flex": 1,
-            "padding": 8,
+            "flexDirection": "row",
           }
         }
       >
-        <Label
-          numberOfLines={1}
+        <ImageView
+          imageProps={Object {}}
+          source="https://facebook.github.io/react-native/docs/assets/favicon.png"
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 16,
-              "fontWeight": "bold",
-              "textAlign": "left",
+              "alignSelf": "center",
+              "height": 36,
+              "padding": 8,
+              "width": 36,
             }
           }
-          text="Hello"
-          textProps={Object {}}
         />
-        <Label
-          numberOfLines={3}
+        <View
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 14,
-              "fontWeight": "normal",
-              "textAlign": "left",
+              "flex": 1,
+              "padding": 8,
             }
           }
-          text="World!"
-          textProps={Object {}}
-        />
-      </View>
+        >
+          <Label
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "textAlign": "left",
+              }
+            }
+            text="Hello"
+            textProps={Object {}}
+          />
+          <Label
+            numberOfLines={3}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 14,
+                "fontWeight": "normal",
+                "textAlign": "left",
+              }
+            }
+            text="World!"
+            textProps={Object {}}
+          />
+        </View>
+      </SafeAreaView>
     </View>
   </TouchableOpacity>
 </AnimatedComponent>
@@ -242,9 +262,8 @@ exports[`renders custom alert with cancel correctly 1`] = `
   <TouchableOpacity
     activeOpacity={1}
     disabled={false}
-    focusedOpacity={0.7}
     onLayout={[Function]}
-    onPress={null}
+    onPress={[Function]}
   >
     <View
       style={
@@ -261,58 +280,66 @@ exports[`renders custom alert with cancel correctly 1`] = `
         ]
       }
     >
-      <ImageView
-        imageProps={Object {}}
-        source="https://facebook.github.io/react/img/logo_og.png"
-        style={
-          Object {
-            "alignSelf": "center",
-            "height": 36,
-            "padding": 8,
-            "width": 36,
-          }
-        }
-      />
-      <View
+      <SafeAreaView
         style={
           Object {
             "flex": 1,
-            "padding": 8,
+            "flexDirection": "row",
           }
         }
       >
-        <Label
-          numberOfLines={1}
+        <ImageView
+          imageProps={Object {}}
+          source="https://facebook.github.io/react-native/docs/assets/favicon.png"
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 16,
-              "fontWeight": "bold",
-              "textAlign": "left",
+              "alignSelf": "center",
+              "height": 36,
+              "padding": 8,
+              "width": 36,
             }
           }
-          text="Hello"
-          textProps={Object {}}
         />
-        <Label
-          numberOfLines={3}
+        <View
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 14,
-              "fontWeight": "normal",
-              "textAlign": "left",
+              "flex": 1,
+              "padding": 8,
             }
           }
-          text="World!"
-          textProps={Object {}}
-        />
-      </View>
+        >
+          <Label
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "textAlign": "left",
+              }
+            }
+            text="Hello"
+            textProps={Object {}}
+          />
+          <Label
+            numberOfLines={3}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 14,
+                "fontWeight": "normal",
+                "textAlign": "left",
+              }
+            }
+            text="World!"
+            textProps={Object {}}
+          />
+        </View>
+      </SafeAreaView>
       <TouchableOpacity
         activeOpacity={0.2}
-        focusedOpacity={0.7}
         onPress={[Function]}
         style={
           Object {
@@ -324,7 +351,11 @@ exports[`renders custom alert with cancel correctly 1`] = `
       >
         <ImageView
           imageProps={Object {}}
-          source={1}
+          source={
+            Object {
+              "testUri": "../../../assets/cancel.png",
+            }
+          }
           style={
             Object {
               "alignSelf": "center",
@@ -372,7 +403,6 @@ exports[`renders error alert correctly 1`] = `
   <TouchableOpacity
     activeOpacity={0.95}
     disabled={false}
-    focusedOpacity={0.7}
     onLayout={[Function]}
     onPress={[Function]}
   >
@@ -390,55 +420,68 @@ exports[`renders error alert correctly 1`] = `
         ]
       }
     >
-      <ImageView
-        imageProps={Object {}}
-        source={1}
-        style={
-          Object {
-            "alignSelf": "center",
-            "height": 36,
-            "padding": 8,
-            "width": 36,
-          }
-        }
-      />
-      <View
+      <SafeAreaView
         style={
           Object {
             "flex": 1,
-            "padding": 8,
+            "flexDirection": "row",
           }
         }
       >
-        <Label
-          numberOfLines={1}
-          style={
+        <ImageView
+          imageProps={Object {}}
+          source={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 16,
-              "fontWeight": "bold",
-              "textAlign": "left",
+              "testUri": "../../../assets/error.png",
             }
           }
-          text="Hello"
-          textProps={Object {}}
-        />
-        <Label
-          numberOfLines={3}
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 14,
-              "fontWeight": "normal",
-              "textAlign": "left",
+              "alignSelf": "center",
+              "height": 36,
+              "padding": 8,
+              "width": 36,
             }
           }
-          text="World!"
-          textProps={Object {}}
         />
-      </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "padding": 8,
+            }
+          }
+        >
+          <Label
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "textAlign": "left",
+              }
+            }
+            text="Hello"
+            textProps={Object {}}
+          />
+          <Label
+            numberOfLines={3}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 14,
+                "fontWeight": "normal",
+                "textAlign": "left",
+              }
+            }
+            text="World!"
+            textProps={Object {}}
+          />
+        </View>
+      </SafeAreaView>
     </View>
   </TouchableOpacity>
 </AnimatedComponent>
@@ -476,7 +519,6 @@ exports[`renders info alert correctly 1`] = `
   <TouchableOpacity
     activeOpacity={0.95}
     disabled={false}
-    focusedOpacity={0.7}
     onLayout={[Function]}
     onPress={[Function]}
   >
@@ -494,55 +536,68 @@ exports[`renders info alert correctly 1`] = `
         ]
       }
     >
-      <ImageView
-        imageProps={Object {}}
-        source={1}
-        style={
-          Object {
-            "alignSelf": "center",
-            "height": 36,
-            "padding": 8,
-            "width": 36,
-          }
-        }
-      />
-      <View
+      <SafeAreaView
         style={
           Object {
             "flex": 1,
-            "padding": 8,
+            "flexDirection": "row",
           }
         }
       >
-        <Label
-          numberOfLines={1}
-          style={
+        <ImageView
+          imageProps={Object {}}
+          source={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 16,
-              "fontWeight": "bold",
-              "textAlign": "left",
+              "testUri": "../../../assets/info.png",
             }
           }
-          text="Hello"
-          textProps={Object {}}
-        />
-        <Label
-          numberOfLines={3}
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 14,
-              "fontWeight": "normal",
-              "textAlign": "left",
+              "alignSelf": "center",
+              "height": 36,
+              "padding": 8,
+              "width": 36,
             }
           }
-          text="World!"
-          textProps={Object {}}
         />
-      </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "padding": 8,
+            }
+          }
+        >
+          <Label
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "textAlign": "left",
+              }
+            }
+            text="Hello"
+            textProps={Object {}}
+          />
+          <Label
+            numberOfLines={3}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 14,
+                "fontWeight": "normal",
+                "textAlign": "left",
+              }
+            }
+            text="World!"
+            textProps={Object {}}
+          />
+        </View>
+      </SafeAreaView>
     </View>
   </TouchableOpacity>
 </AnimatedComponent>
@@ -580,7 +635,6 @@ exports[`renders success alert correctly 1`] = `
   <TouchableOpacity
     activeOpacity={0.95}
     disabled={false}
-    focusedOpacity={0.7}
     onLayout={[Function]}
     onPress={[Function]}
   >
@@ -598,55 +652,68 @@ exports[`renders success alert correctly 1`] = `
         ]
       }
     >
-      <ImageView
-        imageProps={Object {}}
-        source={1}
-        style={
-          Object {
-            "alignSelf": "center",
-            "height": 36,
-            "padding": 8,
-            "width": 36,
-          }
-        }
-      />
-      <View
+      <SafeAreaView
         style={
           Object {
             "flex": 1,
-            "padding": 8,
+            "flexDirection": "row",
           }
         }
       >
-        <Label
-          numberOfLines={1}
-          style={
+        <ImageView
+          imageProps={Object {}}
+          source={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 16,
-              "fontWeight": "bold",
-              "textAlign": "left",
+              "testUri": "../../../assets/success.png",
             }
           }
-          text="Hello"
-          textProps={Object {}}
-        />
-        <Label
-          numberOfLines={3}
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 14,
-              "fontWeight": "normal",
-              "textAlign": "left",
+              "alignSelf": "center",
+              "height": 36,
+              "padding": 8,
+              "width": 36,
             }
           }
-          text="World!"
-          textProps={Object {}}
         />
-      </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "padding": 8,
+            }
+          }
+        >
+          <Label
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "textAlign": "left",
+              }
+            }
+            text="Hello"
+            textProps={Object {}}
+          />
+          <Label
+            numberOfLines={3}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 14,
+                "fontWeight": "normal",
+                "textAlign": "left",
+              }
+            }
+            text="World!"
+            textProps={Object {}}
+          />
+        </View>
+      </SafeAreaView>
     </View>
   </TouchableOpacity>
 </AnimatedComponent>
@@ -684,7 +751,6 @@ exports[`renders warn alert correctly 1`] = `
   <TouchableOpacity
     activeOpacity={0.95}
     disabled={false}
-    focusedOpacity={0.7}
     onLayout={[Function]}
     onPress={[Function]}
   >
@@ -702,55 +768,68 @@ exports[`renders warn alert correctly 1`] = `
         ]
       }
     >
-      <ImageView
-        imageProps={Object {}}
-        source={1}
-        style={
-          Object {
-            "alignSelf": "center",
-            "height": 36,
-            "padding": 8,
-            "width": 36,
-          }
-        }
-      />
-      <View
+      <SafeAreaView
         style={
           Object {
             "flex": 1,
-            "padding": 8,
+            "flexDirection": "row",
           }
         }
       >
-        <Label
-          numberOfLines={1}
-          style={
+        <ImageView
+          imageProps={Object {}}
+          source={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 16,
-              "fontWeight": "bold",
-              "textAlign": "left",
+              "testUri": "../../../assets/warn.png",
             }
           }
-          text="Hello"
-          textProps={Object {}}
-        />
-        <Label
-          numberOfLines={3}
           style={
             Object {
-              "backgroundColor": "transparent",
-              "color": "white",
-              "fontSize": 14,
-              "fontWeight": "normal",
-              "textAlign": "left",
+              "alignSelf": "center",
+              "height": 36,
+              "padding": 8,
+              "width": 36,
             }
           }
-          text="World!"
-          textProps={Object {}}
         />
-      </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "padding": 8,
+            }
+          }
+        >
+          <Label
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "textAlign": "left",
+              }
+            }
+            text="Hello"
+            textProps={Object {}}
+          />
+          <Label
+            numberOfLines={3}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "white",
+                "fontSize": 14,
+                "fontWeight": "normal",
+                "textAlign": "left",
+              }
+            }
+            text="World!"
+            textProps={Object {}}
+          />
+        </View>
+      </SafeAreaView>
     </View>
   </TouchableOpacity>
 </AnimatedComponent>

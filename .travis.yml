@@ -1,9 +1,13 @@
 language: node_js
 node_js:
-  - "5.10.1"
+  - "6.9.1"
 branches:
   only:
     - master
 build:
   run:
     - npm test
+before_install:
+  - pip install --user codecov
+after_success:
+  - codecov --file coverage/lcov.info --disable search
