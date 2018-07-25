@@ -160,16 +160,10 @@ export default class DropdownAlert extends Component {
         }
       },
       onPanResponderRelease: (evt, gestureState) => {
-        const delta = this.state.startDelta / 5;
-        if (gestureState.dy < delta) {
-          this.close('pan');
-        }
+        this.close('pan');
       },
       onPanResponderTerminate: (evt, gestureState) => {
-        const delta = this.state.startDelta / 5;
-        if (gestureState.dy < delta) {
-          this.close('pan');
-        }
+        this.close('pan');
       },
     });
   };
